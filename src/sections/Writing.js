@@ -122,7 +122,7 @@ const MorePosts = ({ username, name, number }) => (
         <Heading lineHeight={1.5}>
           It seems that
           <Text color="secondary">{name}</Text>
-          {`has published ${number} more posts!`}
+          {`has published ${number+2} more posts!`}
         </Heading>
       </Box>
       <Heading color="primary" mt={5} textAlign="right">
@@ -177,7 +177,7 @@ const Writing = () => (
     render={({ allMediumPost, site, author }) => {
       const posts = edgeToArray(allMediumPost).map(parsePost(author));
 
-      const diffAmountArticles = allMediumPost.totalCount - posts.length;
+      const diffAmountArticles = allMediumPost.totalCount;
       if (diffAmountArticles > 0) {
         posts.push({
           ...author,
