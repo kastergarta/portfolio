@@ -59,7 +59,7 @@ const Footer = () => (
           <FooterContainer>
             <Fade left>
               <TextFooter fontSize={[2, 3]}>
-               Feel free to contact me ❤️
+               I can't wait to see what we can build together ❤️
               </TextFooter>
             </Fade>
             <Flex>
