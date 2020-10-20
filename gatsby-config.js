@@ -14,6 +14,12 @@ const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 const plugins = [
   'gatsby-plugin-react-helmet',
   {
+    resolve: `gatsby-plugin-gtag`,
+    options: {
+      trackingId: `UA-180703476-1`,
+    },
+  },
+  {
     resolve: 'gatsby-plugin-web-font-loader',
     options: {
       google: {
